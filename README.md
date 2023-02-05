@@ -1,5 +1,7 @@
 # Talkie Toaster
 
+[![Code Quality](https://github.com/naxxfish/talkie-toaster/actions/workflows/code_quality.yml/badge.svg)](https://github.com/naxxfish/talkie-toaster/actions/workflows/code_quality.yml)
+
 [@talkietoaster@botsin.space](https://botsin.space/@talkietoaster)
 
 This is a Mastodon bot which acts like the Talkie Toaster from Red Dwarf: a toaster which has sentient AI, who's sole goal in life and obsession is making toast. 
