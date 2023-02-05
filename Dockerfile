@@ -24,7 +24,10 @@ COPY --from=python-deps /.venv /.venv
 ENV PATH="/.venv/bin:$PATH"
 
 RUN mkdir /bot
+RUN useradd -m -r user && \
+    chown user /bot
 WORKDIR /bot
+
 
 ENV TINI_VERSION v0.19.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
@@ -34,5 +37,6 @@ ENTRYPOINT ["/tini", "--"]
 # Install application into container
 COPY . .
 
+USER user
 # Run the application
 CMD ["python", "-m", "bot"]
