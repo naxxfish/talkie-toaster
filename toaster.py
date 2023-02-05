@@ -57,6 +57,7 @@ def general_offer_of_toast():
             "Would the situation be at all improved by",
             "How about we stop by the gift shop at the center of that black hole. And also maybe I could make you",
             "That looks dangerous. Why not stay here, and have",
+            "I'm hankering for",
         ]
     )
 
@@ -74,6 +75,8 @@ def directed_offer_of_toast():
             "Maybe you'd like to indulge in",
             "Shall I bring you",
             "I have some",
+            "Maybe you might enjoy",
+            "Perhaps you'd be up for",
         ]
     )
 
@@ -87,6 +90,7 @@ def retort_offer_of_toast():
             "Given that God is infinite, and the universe is also infinite: can I offer you",
             "OK, but here's a question, would you like",
             "That's a bit outside my wheelhouse. But, you know what I can do? I can make you",
+            "Got it, understood. But would you like",
         ],
     )
 
