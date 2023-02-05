@@ -103,6 +103,7 @@ class TalkieToasterBot:
                 logger.debug(
                     f"Skipped notification {notification['id']} as it was created over an hour before we started {notification['created_at']}"
                 )
+                highest_id = max(highest_id, notification["id"])
                 continue
             if (
                 notification["type"] == "mention"
